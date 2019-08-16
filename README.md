@@ -43,5 +43,5 @@ The core is `merge`,[source here](./source.py/Mergesort.py)
 
 ### Quicksort
 
-The core is `diveide one to three`,[source here](./source.py/Quickmerge.py)
+The core is `diveide one to three`,[source here](./source.py/Quicksort.py)
 
