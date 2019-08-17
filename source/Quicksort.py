@@ -55,10 +55,11 @@ def list_swap(A,a,b):
         A[b] = tmp
 
 
-unordered = []
-for i in range(0,100):
-    unordered.append(np.random.randint(-50,50))
-print(unordered)
-Quicksort(unordered,0,len(unordered)-1)
-# list_swap(unordered,0,1)
-print(unordered)
+def Main():
+    unordered = []
+    for i in range(0,100):
+        unordered.append(np.random.randint(-50,50))
+    print(unordered)
+    Quicksort(unordered,0,len(unordered)-1)
+    # list_swap(unordered,0,1)
+    print(unordered)

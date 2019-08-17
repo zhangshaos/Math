@@ -48,11 +48,11 @@ def Merge(array,start,m,end): #@param:m is the array's middle element,which devi
 
 
 #Main():
-unsorded = []
-i = 0
-while(i<100):
-    unsorded.append(np.random.randint(-50,50))
-    i+=1
-print(unsorded)
-Mergesort(unsorded,0,i-1)
-print(unsorded)
+# unsorded = []
+# i = 0
+# while(i<100):
+#     unsorded.append(np.random.randint(-50,50))
+#     i+=1
+# print(unsorded)
+# Mergesort(unsorded,0,i-1)
+# print(unsorded)
