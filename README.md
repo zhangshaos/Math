@@ -7,6 +7,8 @@ some joy......
 
 [2.寻找中位数](#无序数列中寻找中位数)(*find the median of an array*)
 
+[3.N queens](#N queens)
+
 
 
 ---
@@ -23,6 +25,11 @@ some joy......
 
 
 
+## N queens
+1. [**'Backtracking'** solution](./source/PlaceQueens.py)
+
+
+
 
 
 ---
@@ -33,9 +40,9 @@ some joy......
 
 [2.Quicksort](#Quicksort)
 
-[3.Qucikselect]()
+[3.Qucikselect](#Quicksort)
 
-[4.Momselect]()
+* [Momselect](#Momselect)
 
 
 
@@ -98,4 +105,3 @@ So let's get the midian's index `pivot`as far as possible.
 ### Momselect
 
 developed `Quickselect`,[source here](./source/Momselect.py)
-
