@@ -9,6 +9,8 @@ some joy......
 
 [3.N queens](#N queens)
 
+[4.'[<>]'(a Chinese board game )](#'[<>]')
+
 
 
 ---
@@ -19,16 +21,22 @@ some joy......
 
 ## 无序数列中寻找中位数
 
-*fine the median of an unsored array in linear time.*
-
-`核心: 中位数一个序列中中间大小的数, 也就是说, 有len/2个数小于该中位数(这len/2个数字的顺序无关),由此可以想到Parttion算法-用pivot代表那个中位数`
+*Fine the median of an unsored array in linear time.*
 
 
 
 ## N queens
-1. [**'Backtracking'** solution](./source/PlaceQueens.py)
+1. [**"Back Tracking"** solution](./source/PlaceQueens.py)
+
+2. [**"Dynamic Programming"** solution](./source/PlaceQueen2.py)
 
 
+
+## '[<>]'
+
+A Chinese board game with its board looking like the shape`'[<>]'`.
+
+The core is `Backtracking`.
 
 
 
