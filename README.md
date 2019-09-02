@@ -154,3 +154,17 @@ return s.LLP
 
 Let me see, do you feel that's like a ... WFS algorithm? Yes, when I write them down, I see...
 
+The truly Dynamic Programming  shows below :
+
+```
+LongestPath(s, t) :
+for each node v in postorder
+	if v = t
+		v.LLP <- 0
+	else
+		v.LLP <- minus INF
+		for each edge v->w
+			v.LLP <- max{ v.LLP, l(v->w)+ w.LLP }
+return s.LLP
+```
+
