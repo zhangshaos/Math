@@ -1,7 +1,7 @@
 # Math
 some joy......
 
-
+[TOC]
 
 [1.古典概率题](#一个古典概率问题)
 
@@ -27,8 +27,12 @@ some joy......
 
 ## N queens
 1. [**"Back Tracking"** solution](./source/PlaceQueens.py)
-
 2. [**"Dynamic Programming"** solution](./source/PlaceQueen2.py)
+
+* The "Dynamic Programming" have two points personally.
+  * Find the **recursive** relation.
+  * Analyse recursive space structure.
+  * Order from bottom up, form right to left, form easy to hard.
 
 
 
@@ -51,6 +55,8 @@ The core is `Backtracking`.
 [3.Qucikselect](#Quicksort)
 
 * [Momselect](#Momselect)
+
+[4.LongestPath](#LongestPath)
 
 
 
@@ -108,8 +114,43 @@ So how can we make the `loca` because `N/2`,  and the key is that make the eleme
 
 So let's get the midian's index `pivot`as far as possible.
 
-![tips](./source/Mom.jpg)
+![tips](./source.py/Mom.jpg)
 
 ### Momselect
 
 developed `Quickselect`,[source here](./source/Momselect.py)
+
+
+
+### LongestPath
+
+Find the longest path in a graph.
+
+```
+LongestPath(v, t) :
+if v = t
+	return 0
+if v.LLP is undefined 
+	v.LLP <- minus INF
+	for each edge v->w
+		v.LLP <- max{ v.LLP, l(v->w) + LongestPath(w, t) }
+	return v.LLP
+```
+
+I want to use dynamic programming to improve it, like this:
+
+```
+LongestPath(s, t) :
+for each edge v->t
+	v.LLP = l(v->t)
+	NEXT[ ].add(v)
+for each node n in NEXT[ ]
+	NEXT.pop(n)
+	for each edge v->n
+		v.LLP = l(v->n)
+		NEXT[ ].add(v)
+return s.LLP
+```
+
+Let me see, do you feel that's like a ... WFS algorithm? Yes, when I write them down, I see...
+
